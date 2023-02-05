@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Payment Page</title>
+    </style>
+
+    <script type="text/javascript">
+        function validate()
+        {
+
+            
+            var crdN = document.getElementById("card_n");
+            var Mnth = document.getElementById("mnth");
+            var CV = document.getElementById("cv");
+            var uname = document.getElementById("nme");
+
+            if(crdN.value.trim()=="" || Mnth.value.trim()=="" || CV.value.trim()=="" || uname.value.trim()=="")
+            {
+
+                alert("All Fields Are Required");
+
+                return false;
+            }
+            else 
+            {
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <form action="home.html" onsubmit="return validate()">
+    <section class="pay-container">
+        <div id="Credit-Card" class="tabcontent">
+            <h2 class="center">Pay by Credit Card</h2><br>
+
+            <p class="center-txt">Card Number</p>
+            <input id="card_n" type="text" name="card" placeholder="Enter Card Number">
+    
+            <p class="center-txt">Expiration Date</p>
+            <input id="mnth" type="month" name="month" placeholder="Month">
+    
+            <p id="cv" class="center-txt">CVV/CVC</p>
+            <input type="text" name="cvv">
+    
+            <p id="nme" class="center-txt">Card Holder Name</p>
+            <input type="text" name="name" placeholder="Enter Card Holder Name">
+
+            <button class="btnn" type="submit" value="save"><a href="#">Pay</a></button>
+        </div>
+    </section>
+    </form>
+    
+</body>
+
+</html>

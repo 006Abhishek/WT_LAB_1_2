@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+        background-color: #ffffff;
+}
+
+        
+
+input[type="text"],
+input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 6px solid;
+    background: #ffffff;
+    padding: 5px;
+    margin: 0px 0px 2px 0px;
+    border: 1px solid #c9c7c7;
+    width: 50%;
+}
+
+p {
+    margin: 10px 0px 3px 0px;
+    font-size: 17px;
+    font-width: 17px strong;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgba(236, 117, 49, 0.96);
+    color: black;
+    padding: 10px 20px;
+    margin: 15px 10px 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 25%;
+    text: strong;
+}
+
+.pay-container{
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-left: 180px;
+}
+
+.pay-container h2{
+	width: 220px;
+	font-family: sans-serif;
+	text-align: center;
+	color: #ff7200;
+	font-size: 22px;
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 2px;
+	padding: 8px;
+}   
+
+.pay-container input{
+	width: 240px;
+	height: 35px;
+	background :transparent;
+	border-bottom: 1px solid #ff7200;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	font-family: sans-serif;
+}
+
+.pay-container input:focus{
+	outline: none; 
+}
+
+.btnn{
+	width: 240px;
+	height: 40px;
+	background: #ff7200;
+	border:none;
+	margin-top: 30px;
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: #fff;
+	transition: 0.4s ease;  
+}
+
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+
+.btnn a{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+#Credit-Card{
+    padding: 20px 10px;
+    width: 30%;
+    height: 70%;
+    background-color:#bbb9b9;
+    border-radius: 10px;
+}
